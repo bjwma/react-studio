@@ -6,9 +6,9 @@ function BakeryItem(props) {
             <h2>Price: {props.item.price}</h2>
             <p> Description: {props.item.description}</p>
             <img src={props.item.image}/>
+            <button onClick={() => {props.addToCart(props.item)}} Add to Cart />
         </div>
     )
-
 }
 
 export default BakeryItem;
