@@ -1,3 +1,4 @@
+import React from 'react';
 // TODO: create a component that displays a single bakery item
 function BakeryItem(props) {
     return (
@@ -6,7 +7,7 @@ function BakeryItem(props) {
             <h2>Price: {props.item.price}</h2>
             <p> Description: {props.item.description}</p>
             <img src={props.item.image}/>
-            <button onClick={() => {props.addToCart(props.item)}} Add to Cart />
+            <button onClick={() => {props.addToCart(props.item)}}> Add to Cart </button>
         </div>
     )
 }
