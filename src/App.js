@@ -1,4 +1,5 @@
 import "./App.css";
+import "./components/BakeryItem.css"
 import { useState } from "react";
 import bakeryData from "./assets/bakery-data.json";
 import BakeryItem from "./components/BakeryItem";
@@ -31,12 +32,6 @@ function App() {
   return (
     <div className="App">
       <h1>My Bakery</h1> {/* TODO: personalize your bakery (if you want) */}
-
-      <div className="bakery-container">
-        {bakeryData.map((item, index) => (
-          <BakeryItem item={item} addToCart={addToCart}/>
-        ))}
-      </div>
       <div>
         <h2>Cart</h2>
         {cartItems.map((item, index) => (<p> {item.name} </p>))}
